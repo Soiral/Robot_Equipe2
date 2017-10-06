@@ -73,7 +73,7 @@ void tourner_droite(int puissance, String sens, int rapidite) {
     roue_gauche(puissance + 100, sens);
   }  
 }
-
+//0 -> arret
 //1 -> avancer
 //2 -> avancer rapidement
 //3 -> reculer
@@ -102,16 +102,16 @@ void loop()
       roue_gauche(0, "avant");
       break;
     case '1':
-      roue_droite(50, "avant");
-      roue_gauche(50, "avant");
+      roue_droite(70, "avant");
+      roue_gauche(70, "avant");
       break;
     case '2':
       roue_droite(200, "avant");
       roue_gauche(200, "avant");
       break;
     case '3':
-      roue_droite(50, "arriere");
-      roue_gauche(50, "arriere");
+      roue_droite(70, "arriere");
+      roue_gauche(70, "arriere");
       break;
     case '4':
       roue_droite(200, "arriere");
